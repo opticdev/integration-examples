@@ -1,0 +1,18 @@
+{
+  "name": "fastify",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn run tsc --build --verbose"
+  },
+  "dependencies": {
+    "@fastify/swagger": "^8.3.1",
+    "@sinclair/typebox": "^0.27.8",
+    "fastify": "^4.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^18.15.11",
+    "typescript": "^5.0.4"
+  }
+}

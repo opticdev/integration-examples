@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "outDir": "build",
+    "resolveJsonModule": true,
+    "rootDir": "src"
+  },
+  "ts-node": {
+    "files": true
+  }
+}
