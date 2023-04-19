@@ -5,6 +5,9 @@ import { Static, Type } from "@sinclair/typebox";
 export const setupApp = async () => {
   const app = Fastify();
 
+  // Create an API and get an optic-url from https://app.useoptic.com
+  const opticUrl = {'x-optic-url': 'https://app.useoptic.com/[placeholder]'} as any;
+
   await app.register(fastifySwagger, {
     // Opt into OpenAPIV3 generation
     openapi: {
@@ -12,6 +15,7 @@ export const setupApp = async () => {
         title: "My api spec",
         version: "1.0.0",
       },
+      ...opticUrl
     },
   });
 
