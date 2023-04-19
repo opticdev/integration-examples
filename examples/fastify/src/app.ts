@@ -5,7 +5,7 @@ import { Static, Type } from "@sinclair/typebox";
 export const setupApp = async () => {
   const app = Fastify();
 
-  app.register(fastifySwagger, {
+  await app.register(fastifySwagger, {
     // Opt into OpenAPIV3 generation
     openapi: {
       info: {
