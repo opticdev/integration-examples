@@ -11,6 +11,7 @@ export const setupApp = async () => {
   await app.register(fastifySwagger, {
     // Opt into OpenAPIV3 generation
     openapi: {
+      openapi: '3.1.3',
       info: {
         title: "My api spec",
         version: "1.0.0",
